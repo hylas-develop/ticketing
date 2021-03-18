@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
         - name: orders
-          # image: us.gcr.io/ticketing-dev-306911/orders
           image: adohylas/orders
           env:
             - name: NATS_CLIENT_ID
@@ -32,6 +31,7 @@ spec:
                 secretKeyRef:
                   name: jwt-secret
                   key: JWT_KEY
+                  
 ---
 apiVersion: v1
 kind: Service
