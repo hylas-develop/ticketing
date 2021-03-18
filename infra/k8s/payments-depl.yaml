@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: payments
-          image: us.gcr.io/ticketing-dev-306911/payments
-          # image: adohylas/payments
+          # image: us.gcr.io/ticketing-dev-306911/payments
+          image: adohylas/payments
           env:
             - name: NATS_CLIENT_ID
               valueFrom:

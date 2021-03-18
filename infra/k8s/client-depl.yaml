@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: client
-          image: us.gcr.io/ticketing-dev-306911/client
-          # image: adohylas/auth
+          #image: us.gcr.io/ticketing-dev-306911/client
+          image: adohylas/auth
 ---
 apiVersion: v1
 kind: Service
